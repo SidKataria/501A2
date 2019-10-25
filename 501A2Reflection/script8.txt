@@ -3,7 +3,7 @@ Filename: script8.txt
 Running Test: Test String
 Recursive: true
 
-Declaring class: java.lang.String
+Declaring Class: java.lang.String
 	SuperClass: java.lang.Object
 	Interface: interface java.io.Serializable
 	Interface: interface java.lang.Comparable

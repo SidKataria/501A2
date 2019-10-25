@@ -3,7 +3,7 @@ Filename: script6.txt
 Running Test: [LClassB;@27c170f0
 Recursive: true
 
-Declaring class: [LClassB;
+Declaring Class: [LClassB;
 	SuperClass: java.lang.Object
 	Interface: interface java.lang.Cloneable
 	Interface: interface java.io.Serializable
