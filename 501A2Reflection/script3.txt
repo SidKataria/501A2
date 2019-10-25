@@ -3,16 +3,58 @@ Filename: script3.txt
 Running Test: ClassB
 Recursive: true
 
-Declaring Class: 
- ClassB
-	Interface: 
-	  java.lang.Runnable
-	SuperClass: 
-	 ClassC
-		Interface: 
-	 	  InterfaceA
-		SuperClass: 
-	 	 ClassD
-			SuperClass: 
-	 	 	 java.lang.Object
+Declaring Class-> 
+class ClassB
+ name:ClassB
+	Constructor-> 
+	 public ClassB() throws java.lang.Exception
+	  name: ClassB
+		Modifier-> 
+		   type: public
+	Interface-> 
+	 interface java.lang.Runnable
+	  name: java.lang.Runnable
+	SuperClass-> 
+	 class ClassC
+	  name: ClassC
+		Constructor-> 
+		 public ClassC()
+		  name: ClassC
+			Modifier-> 
+			 	  type: public
+		Constructor-> 
+		 public ClassC(int,int)
+		  name: ClassC
+			ParameterType-> 
+			 	  param[0]: int
+			ParameterType-> 
+			 	  param[1]: int
+			Modifier-> 
+			 	  type: public
+		Interface-> 
+		 interface InterfaceA
+		  name: InterfaceA
+		SuperClass-> 
+		 class ClassD
+	  name: ClassD
+	Constructor-> 
+	 public ClassD()
+	  name: ClassD
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public ClassD(int)
+	  name: ClassD
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+			SuperClass-> 
+			 class java.lang.Object
+		  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		  name: java.lang.Object
+			Modifier-> 
+			 	  type: public
 ======================================================

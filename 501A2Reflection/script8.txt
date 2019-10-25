@@ -3,18 +3,169 @@ Filename: script8.txt
 Running Test: Test String
 Recursive: true
 
-Declaring Class: 
- java.lang.String
-	Interface: 
-	  java.io.Serializable
-	Interface: 
-	  java.lang.Comparable
-	Interface: 
-	  java.lang.CharSequence
-	Interface: 
-	  java.lang.constant.Constable
-	Interface: 
-	  java.lang.constant.ConstantDesc
-	SuperClass: 
-	 java.lang.Object
+Declaring Class-> 
+class java.lang.String
+ name:java.lang.String
+	Constructor-> 
+	 public java.lang.String(byte[])
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],int,int)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],java.nio.charset.Charset)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: java.nio.charset.Charset
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],java.lang.String) throws java.io.UnsupportedEncodingException
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],int,int,java.nio.charset.Charset)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: java.nio.charset.Charset
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(java.lang.StringBuilder)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: java.lang.StringBuilder
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(java.lang.StringBuffer)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: java.lang.StringBuffer
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(char[],int,int)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [C
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(char[])
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [C
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(java.lang.String)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String()
+	  name: java.lang.String
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: java.lang.String
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],int)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(byte[],int,int,int)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: int
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public java.lang.String(int[],int,int)
+	  name: java.lang.String
+		ParameterType-> 
+		   param[0]: [I
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: public
+	Interface-> 
+	 interface java.io.Serializable
+	  name: java.io.Serializable
+	Interface-> 
+	 interface java.lang.Comparable
+	  name: java.lang.Comparable
+	Interface-> 
+	 interface java.lang.CharSequence
+	  name: java.lang.CharSequence
+	Interface-> 
+	 interface java.lang.constant.Constable
+	  name: java.lang.constant.Constable
+	Interface-> 
+	 interface java.lang.constant.ConstantDesc
+	  name: java.lang.constant.ConstantDesc
+	SuperClass-> 
+	 class java.lang.Object
+	  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		  name: java.lang.Object
+			Modifier-> 
+			 	  type: public
 ======================================================
