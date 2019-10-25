@@ -3,8 +3,27 @@ Filename: script4.txt
 Running Test: ClassD
 Recursive: true
 
-Declaring Class: 
- ClassD
-	SuperClass: 
-	 java.lang.Object
+Declaring Class-> 
+class ClassD
+ name:ClassD
+	Constructor-> 
+	 public ClassD()
+	  name: ClassD
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public ClassD(int)
+	  name: ClassD
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+	SuperClass-> 
+	 class java.lang.Object
+	  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		  name: java.lang.Object
+			Modifier-> 
+			 	  type: public
 ======================================================

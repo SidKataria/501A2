@@ -3,12 +3,33 @@ Filename: script1.txt
 Running Test: ClassA
 Recursive: true
 
-Declaring Class: 
- ClassA
-	Interface: 
-	  java.io.Serializable
-	Interface: 
-	  java.lang.Runnable
-	SuperClass: 
-	 java.lang.Object
+Declaring Class-> 
+class ClassA
+ name:ClassA
+	Constructor-> 
+	 public ClassA()
+	  name: ClassA
+		Modifier-> 
+		   type: public
+	Constructor-> 
+	 public ClassA(int)
+	  name: ClassA
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+	Interface-> 
+	 interface java.io.Serializable
+	  name: java.io.Serializable
+	Interface-> 
+	 interface java.lang.Runnable
+	  name: java.lang.Runnable
+	SuperClass-> 
+	 class java.lang.Object
+	  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		  name: java.lang.Object
+			Modifier-> 
+			 	  type: public
 ======================================================
