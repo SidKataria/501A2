@@ -2,4 +2,12 @@
 Filename: script8.txt
 Running Test: Test String
 Recursive: true
+
+Declaring class: java.lang.String
+	SuperClass: java.lang.Object
+	Interface: interface java.io.Serializable
+	Interface: interface java.lang.Comparable
+	Interface: interface java.lang.CharSequence
+	Interface: interface java.lang.constant.Constable
+	Interface: interface java.lang.constant.ConstantDesc
 ======================================================
