@@ -4,7 +4,7 @@ Running Test: [[LClassB;@5451c3a8
 Recursive: true
 
 Declaring Class: [[LClassB;
-	SuperClass: java.lang.Object
 	Interface: interface java.lang.Cloneable
 	Interface: interface java.io.Serializable
+	SuperClass: java.lang.Object
 ======================================================

@@ -4,8 +4,9 @@ Running Test: ClassB
 Recursive: true
 
 Declaring Class: ClassB
+	Interface: interface java.lang.Runnable
 	SuperClass: ClassC
+		Interface: interface InterfaceA
 			SuperClass: ClassD
 				SuperClass: java.lang.Object
-	Interface: interface java.lang.Runnable
 ======================================================
