@@ -3,6 +3,8 @@ Filename: script5.txt
 Running Test: ClassD
 Recursive: true
 
-Declaring Class: ClassD
-	SuperClass: java.lang.Object
+Declaring Class: 
+ ClassD
+	SuperClass: 
+	 java.lang.Object
 ======================================================
