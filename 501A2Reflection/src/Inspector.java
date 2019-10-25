@@ -5,6 +5,11 @@
  */
 public class Inspector {
 	
+	private Class superC = null;
+	private Class[] interfaces = null;
+	private int counter1 = 0;
+	private int counter2 = 0;
+	
 	public Inspector() {
 	}
 
@@ -15,35 +20,49 @@ public class Inspector {
     }
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
-    	Class superC = null;
-    	Class[] interfaces = null;
-    	int counter1 = 0;
-    	int counter2 = 0;
-
         //1. Getting the name of the declaring class
-        System.out.println("Declaring class: " + c.getName());
+        getObjClass(c, recursive);
         
-        //2. Getting the name of the immediate superclass
-        if (c != null && c.getName() != "java.lang.Object") {
+        //2. Getting the name of the immediate superclass and parent classes if any
+        getObjSuperClass(c, recursive);
+        
+        //3. Getting the name of interfaces implemented
+        getInterfaces(c, recursive);
+    }
+    
+    //Method to get object's declaring class's name
+    private void getObjClass(Class c, boolean recursive) {
+    	System.out.println("Declaring Class: " + c.getName());
+    }
+    
+    //Method to get object's superclass
+    private void getObjSuperClass(Class c, boolean recursive) {
+    	if (c != null && c.getName() != "java.lang.Object") {
         	superC = c.getSuperclass();
         	System.out.println("	SuperClass: " + superC.getName());
         }
-        
-        //2a. Getting superclasses if more
-        while (superC != null && superC.getName() != "java.lang.Object") {
+    	getSuperClasses(superC, recursive);
+    }
+    
+    //Method to get parent classes to SuperClass if any
+    private void getSuperClasses(Class superC, boolean recursive) {
+    	while (superC != null && superC.getName() != "java.lang.Object") {
         	counter1++;
         	superC = superC.getSuperclass();
         	for (int i = -1; i <= counter1; i++)
         		System.out.print("	");
         	System.out.println("SuperClass: " + superC.getName());
         }
-        
-        //3. Getting the name of interfaces implemented
-        interfaces = c.getInterfaces();
+    }
+    
+    //Method to get the object's implemented interfaces
+    private void getInterfaces(Class c, boolean recursive) {
+    	interfaces = c.getInterfaces();
         for (int i = 0; i < interfaces.length; i++) {
-        	counter2++;
+        	//counter2++;
         	System.out.println("	Interface: " + interfaces[i]);
         }
     }
+    
 
 }

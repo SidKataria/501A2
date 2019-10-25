@@ -3,7 +3,7 @@ Filename: script1.txt
 Running Test: ClassA
 Recursive: true
 
-Declaring class: ClassA
+Declaring Class: ClassA
 	SuperClass: java.lang.Object
 	Interface: interface java.io.Serializable
 	Interface: interface java.lang.Runnable
