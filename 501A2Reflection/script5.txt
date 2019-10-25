@@ -8,141 +8,141 @@ class ClassD
  name:ClassD
 	Constructor-> 
 	 public ClassD()
-	  name: ClassD
-		Modifier-> 
-		   type: public
+	   name: ClassD
+	Modifier-> 
+	   type: public
 	Constructor-> 
 	 public ClassD(int)
-	  name: ClassD
-		ParameterType-> 
-		   param[0]: int
-		Modifier-> 
-		   type: public
+	   name: ClassD
+	ParameterType-> 
+	   param[0]: int
+	Modifier-> 
+	   type: public
 	Method-> 
-	 	  name: toString
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: java.lang.String
+	   name: toString
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: java.lang.String
 	Method-> 
-	 	  name: getVal3
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: int
+	   name: getVal3
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: int
 	Field-> 
-	 	  name: val
-		  type: ClassA
-		  modifier: private
+	   name: val
+	  type: ClassA
+	  modifier: private
 	 	Field-> 
-	 	  name: val2
-		  type: ClassA
-		  modifier: none
+	   name: val2
+	  type: ClassA
+	  modifier: none
 	 	Field-> 
-	 	  name: val3
-		  type: int
-		  modifier: private
-	 	  value: 34
+	   name: val3
+	  type: int
+	  modifier: private
+	   value: 34
 	Field-> 
-	 	  name: vallarray
-		  type: [LClassA;
-		  modifier: private
+	   name: vallarray
+	  type: [LClassA;
+	  modifier: private
 	 		SuperClass-> 
 		 class java.lang.Object
-		  name: java.lang.Object
-			Constructor-> 
-			 public java.lang.Object()
-			  name: java.lang.Object
-				Modifier-> 
-				 		  type: public
-			Method-> 
-			 			  name: finalize
-				Exception-> 
-				 			  type: java.lang.Throwable
-				Modifier-> 
-				 		  type: protected
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				ParameterType-> 
-				 		  param[0]: long
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				ParameterType-> 
-				 		  param[0]: long
-				ParameterType-> 
-				 		  param[1]: int
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: equals
-				ParameterType-> 
-				 		  param[0]: java.lang.Object
-				Modifier-> 
-				 		  type: public
-				Return-> 
-				 		  type: boolean
-			Method-> 
-			 			  name: toString
-				Modifier-> 
-				 		  type: public
-				Return-> 
-				 		  type: java.lang.String
-			Method-> 
-			 			  name: hashCode
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: int
-			Method-> 
-			 			  name: getClass
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: java.lang.Class
-			Method-> 
-			 			  name: clone
-				Exception-> 
-				 			  type: java.lang.CloneNotSupportedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: java.lang.Object
-			Method-> 
-			 			  name: notify
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: notifyAll
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: registerNatives
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
+	  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		   name: java.lang.Object
+		Modifier-> 
+		 	  type: public
+		Method-> 
+		 	  name: finalize
+		Exception-> 
+		 	  type: java.lang.Throwable
+		Modifier-> 
+		 	  type: protected
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		ParameterType-> 
+		 	  param[0]: long
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		ParameterType-> 
+		 	  param[0]: long
+		ParameterType-> 
+		 	  param[1]: int
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: equals
+		ParameterType-> 
+		 	  param[0]: java.lang.Object
+		Modifier-> 
+		 	  type: public
+		Return-> 
+		 		  type: boolean
+		Method-> 
+		 	  name: toString
+		Modifier-> 
+		 	  type: public
+		Return-> 
+		 		  type: java.lang.String
+		Method-> 
+		 	  name: hashCode
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: int
+		Method-> 
+		 	  name: getClass
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: java.lang.Class
+		Method-> 
+		 	  name: clone
+		Exception-> 
+		 	  type: java.lang.CloneNotSupportedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: java.lang.Object
+		Method-> 
+		 	  name: notify
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: notifyAll
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: registerNatives
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
 ======================================================

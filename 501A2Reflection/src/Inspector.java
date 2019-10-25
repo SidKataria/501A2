@@ -22,12 +22,8 @@ public class Inspector {
 	private Object value;
 	private Object obj;
 	private int finalCount;
-	private int counter1;
-	private int counter2;
 	
 	public Inspector() {
-		counter1 = 0;
-		counter2= 0;
 		finalCount=0;
 		classConstructors = null;
 		interfaces = null;
@@ -77,7 +73,7 @@ public class Inspector {
     	methods = c.getDeclaredMethods();
     	for (Method m : methods) {
     		properPrint(counter, "Method->");
-    		properPrint(counter, "none");
+    		properPrint(counter-1, "none");
     		System.out.println(" name: " + m.getName());
     		getParamTypes(m, recursive, counter);
     		getExps(m, recursive, counter);
@@ -88,16 +84,16 @@ public class Inspector {
     //Method to get a method's return type
     private void getReturn(Method m, boolean recursive, int counter) {
     	returnType = m.getReturnType();
-    	properPrint(counter+1, "Return->");
-		properPrint(counter-1, "none");
+    	properPrint(counter, "Return->");
+		properPrint(counter, "none");
 		System.out.println(" type: " + returnType.getName());
     }
     //Method to get Method's Exceptions 
     private void getExps(Method m, boolean recursive, int counter) {
     	exps = m.getExceptionTypes();
 		for (Class e : exps) {
-			properPrint(counter+1, "Exception->");
-			properPrint(counter, "none");
+			properPrint(counter, "Exception->");
+			properPrint(counter-1, "none");
 			System.out.println(" type: " + e.getName());
 		}
     }
@@ -107,16 +103,16 @@ public class Inspector {
     	for (Field f : fields) {
     		f.setAccessible(true);
     		properPrint(counter, "Field->");
-			properPrint(counter, "none");
+			properPrint(counter-1, "none");
 			System.out.println(" name: " + f.getName());
-			properPrint(counter+1, "none");
+			properPrint(counter, "none");
 			System.out.println(" type: " + f.getType().getName());
-			properPrint(counter+1, "none");
+			properPrint(counter, "none");
 			int mInt = f.getModifiers();
 	    	mod = getModString(mInt, recursive);
 			System.out.println(" modifier: " + mod);
 			properPrint(counter, "none");
-			getValue(c, f, counter, recursive, obj);
+			getValue(c, f, counter-1, recursive, obj);
     	}
     }
     //Method to get field's current value
@@ -129,7 +125,7 @@ public class Inspector {
 		}
     	if (!f.getType().isPrimitive()) {
     		if (recursive == false) {
-        		properPrint(counter, "none");
+        		properPrint(counter-1, "none");
         		System.out.println(" value: " + f.getClass().getName() + "@" + f.hashCode());
     		}
     	}
@@ -145,7 +141,7 @@ public class Inspector {
     		properPrint(counter, "Constructor->");
     		System.out.println(cc);
     		properPrint(counter, "none");
-    		System.out.println(" name: " + cc.getName());
+    		System.out.println("  name: " + cc.getName());
     		getParamTypes(cc, recursive, counter);
     		getMods(cc, recursive, counter);
     	}
@@ -154,7 +150,7 @@ public class Inspector {
     private void getMods(Constructor cc, boolean recursive, int counter) {
     	int mInt = cc.getModifiers();
     	mod = getModString(mInt, recursive);
-		properPrint(counter+1, "Modifier->");
+		properPrint(counter, "Modifier->");
 		properPrint(counter-1, "none");
 		System.out.println(" type: " + mod);
     }
@@ -162,7 +158,7 @@ public class Inspector {
     private void getMods(Method m, boolean recursive, int counter) {
     	int mInt = m.getModifiers();
     	mod = getModString(mInt, recursive);
-		properPrint(counter+1, "Modifier->");
+		properPrint(counter, "Modifier->");
 		properPrint(counter-1, "none");
 		System.out.println(" type: " + mod);
     }
@@ -170,7 +166,7 @@ public class Inspector {
     private void getParamTypes(Constructor c, boolean recursive, int counter) {
     	paramTypes = c.getParameterTypes();
 		for (int i = 0; i < paramTypes.length; i++) {
-			properPrint(counter+1, "ParameterType->");
+			properPrint(counter, "ParameterType->");
 			properPrint(counter-1, "none");
 			System.out.println(" param" + "["+i+"]: " + paramTypes[i].getName());
 		}
@@ -179,7 +175,7 @@ public class Inspector {
     private void getParamTypes(Method m, boolean recursive, int counter) {
     	paramTypes = m.getParameterTypes();
 		for (int i = 0; i < paramTypes.length; i++) {
-			properPrint(counter+1, "ParameterType->");
+			properPrint(counter, "ParameterType->");
 			properPrint(counter-1, "none");
 			System.out.println(" param" + "["+i+"]: " + paramTypes[i].getName());
 		}
@@ -188,16 +184,15 @@ public class Inspector {
     //Method to get object's superclass
     private void getObjSuperClass(Class c, boolean recursive, Object obj) {
     	if (c != null && c.getName() != "java.lang.Object") {
-    		counter2++;
     		finalCount++;
         	superC = c.getSuperclass();
         	checkArray(superC, finalCount);
         	properPrint(finalCount, "SuperClass->");
         	System.out.println(superC);
-        	properPrint(finalCount, "none");
+        	properPrint(finalCount-1, "none");
         	System.out.println(" name: " + superC.getName());
-        	getClassConstructors(superC, finalCount+1, recursive);
-        	getDecMethods(superC, finalCount+1, recursive);
+        	getClassConstructors(superC, finalCount, recursive);
+        	getDecMethods(superC, finalCount, recursive);
         	getInterfaces(superC, recursive, finalCount);
         	getClassFields(superC, recursive, finalCount, obj);
         }
@@ -207,18 +202,17 @@ public class Inspector {
     //Method to get parent classes to SuperClass if any
     private void getSuperClasses(Class superC, boolean recursive, Object obj) {
     	while (superC != null && superC.getName() != "java.lang.Object") {
-        	counter1++;
         	finalCount++;
         	superC = superC.getSuperclass();
         	checkArray(superC, finalCount);
-        	properPrint(finalCount+1, "SuperClass->");
+        	properPrint(finalCount, "SuperClass->");
         	System.out.println(superC);
-        	properPrint(finalCount, "none");
+        	properPrint(finalCount-1, "none");
         	System.out.println(" name: " + superC.getName());
         	getClassConstructors(superC, finalCount, recursive);
-        	getDecMethods(superC, counter1, recursive);
-        	getInterfaces(superC, recursive, counter1);
-        	getClassFields(superC, recursive, counter1, obj);
+        	getDecMethods(superC, finalCount, recursive);
+        	getInterfaces(superC, recursive, finalCount);
+        	getClassFields(superC, recursive, finalCount, obj);
         }
     }
     
@@ -226,9 +220,9 @@ public class Inspector {
     private void getInterfaces(Class c, boolean recursive, int counter) {
     	interfaces = c.getInterfaces();
         for (int i = 0; i < interfaces.length; i++) {
-        	properPrint(counter + 1, "Interface->");
+        	properPrint(counter, "Interface->");
         	System.out.println(interfaces[i]);
-        	properPrint(counter + 1, "none");
+        	properPrint(counter+1, "none");
         	System.out.println(" name: " + interfaces[i].getName());
         	getClassConstructors(interfaces[i], counter+1, recursive);
         	getDecMethods(interfaces[i], counter+1, recursive);
