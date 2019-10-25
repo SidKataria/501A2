@@ -22,17 +22,13 @@ public class Inspector {
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
         //1. Getting the name of the declaring class
         getObjClass(c, recursive);
-        
-        //2. Getting the name of the immediate superclass and parent classes if any
+        //2, 3. Getting the name of the immediate superclass and parent classes if any and implemented interfaces within
         getObjSuperClass(c, recursive);
-        
-        //3. Getting the name of interfaces implemented
-        //getInterfaces(c, recursive);
     }
     
     //Method to get object's declaring class's name
     private void getObjClass(Class c, boolean recursive) {
-    	System.out.println("Declaring Class: " + c.getName());
+    	System.out.println("Declaring Class: \n " + c.getName());
     	getInterfaces(c, recursive, 0);
     }
     
@@ -41,7 +37,8 @@ public class Inspector {
     	if (c != null && c.getName() != "java.lang.Object") {
     		counter2++;
         	superC = c.getSuperclass();
-        	System.out.println("	SuperClass: " + superC.getName());
+        	properPrint(counter2, "SuperClass");
+        	System.out.println(superC.getName());
         	getInterfaces(superC, recursive, counter2);
         }
     	getSuperClasses(superC, recursive);
@@ -52,9 +49,8 @@ public class Inspector {
     	while (superC != null && superC.getName() != "java.lang.Object") {
         	counter1++;
         	superC = superC.getSuperclass();
-        	for (int i = -1; i <= counter1; i++)
-        		System.out.print("	");
-        	System.out.println("SuperClass: " + superC.getName());
+        	properPrint((counter1 + 1), "SuperClass");
+        	System.out.println(superC.getName());
         	getInterfaces(superC, recursive, counter1);
         }
     }
@@ -63,11 +59,18 @@ public class Inspector {
     private void getInterfaces(Class c, boolean recursive, int counter) {
     	interfaces = c.getInterfaces();
         for (int i = 0; i < interfaces.length; i++) {
-        	for (int j = 0; j <= counter; j++)
-        		System.out.print("	");
-        	System.out.println("Interface: " + interfaces[i]);
+        	properPrint(counter + 1, "Interface");
+        	System.out.println(" " + interfaces[i].getName());
         }
     }
     
+    //Method to print tabs accordingly
+    private void properPrint(int counter, String info) {
+    	for (int i = 0; i < counter; i++)
+    		System.out.print("	");
+    	System.out.println(info + ": ");
+    	for (int i = 0; i < counter; i++)
+    		System.out.print("	" + " ");
+    }
 
 }

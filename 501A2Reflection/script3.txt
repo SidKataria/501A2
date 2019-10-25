@@ -3,10 +3,16 @@ Filename: script3.txt
 Running Test: ClassB
 Recursive: true
 
-Declaring Class: ClassB
-	Interface: interface java.lang.Runnable
-	SuperClass: ClassC
-		Interface: interface InterfaceA
-			SuperClass: ClassD
-				SuperClass: java.lang.Object
+Declaring Class: 
+ ClassB
+	Interface: 
+	  java.lang.Runnable
+	SuperClass: 
+	 ClassC
+		Interface: 
+	 	  InterfaceA
+		SuperClass: 
+	 	 ClassD
+			SuperClass: 
+	 	 	 java.lang.Object
 ======================================================
