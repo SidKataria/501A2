@@ -4,10 +4,10 @@ Running Test: Test String
 Recursive: true
 
 Declaring Class: java.lang.String
-	SuperClass: java.lang.Object
 	Interface: interface java.io.Serializable
 	Interface: interface java.lang.Comparable
 	Interface: interface java.lang.CharSequence
 	Interface: interface java.lang.constant.Constable
 	Interface: interface java.lang.constant.ConstantDesc
+	SuperClass: java.lang.Object
 ======================================================

@@ -27,19 +27,22 @@ public class Inspector {
         getObjSuperClass(c, recursive);
         
         //3. Getting the name of interfaces implemented
-        getInterfaces(c, recursive);
+        //getInterfaces(c, recursive);
     }
     
     //Method to get object's declaring class's name
     private void getObjClass(Class c, boolean recursive) {
     	System.out.println("Declaring Class: " + c.getName());
+    	getInterfaces(c, recursive, 0);
     }
     
     //Method to get object's superclass
     private void getObjSuperClass(Class c, boolean recursive) {
     	if (c != null && c.getName() != "java.lang.Object") {
+    		counter2++;
         	superC = c.getSuperclass();
         	System.out.println("	SuperClass: " + superC.getName());
+        	getInterfaces(superC, recursive, counter2);
         }
     	getSuperClasses(superC, recursive);
     }
@@ -52,15 +55,17 @@ public class Inspector {
         	for (int i = -1; i <= counter1; i++)
         		System.out.print("	");
         	System.out.println("SuperClass: " + superC.getName());
+        	getInterfaces(superC, recursive, counter1);
         }
     }
     
     //Method to get the object's implemented interfaces
-    private void getInterfaces(Class c, boolean recursive) {
+    private void getInterfaces(Class c, boolean recursive, int counter) {
     	interfaces = c.getInterfaces();
         for (int i = 0; i < interfaces.length; i++) {
-        	//counter2++;
-        	System.out.println("	Interface: " + interfaces[i]);
+        	for (int j = 0; j <= counter; j++)
+        		System.out.print("	");
+        	System.out.println("Interface: " + interfaces[i]);
         }
     }
     

@@ -4,7 +4,7 @@ Running Test: ClassA
 Recursive: true
 
 Declaring Class: ClassA
-	SuperClass: java.lang.Object
 	Interface: interface java.io.Serializable
 	Interface: interface java.lang.Runnable
+	SuperClass: java.lang.Object
 ======================================================
