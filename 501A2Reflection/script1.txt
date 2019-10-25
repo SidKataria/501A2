@@ -8,173 +8,173 @@ class ClassA
  name:ClassA
 	Constructor-> 
 	 public ClassA()
-	  name: ClassA
-		Modifier-> 
-		   type: public
+	   name: ClassA
+	Modifier-> 
+	   type: public
 	Constructor-> 
 	 public ClassA(int)
-	  name: ClassA
-		ParameterType-> 
-		   param[0]: int
-		Modifier-> 
-		   type: public
+	   name: ClassA
+	ParameterType-> 
+	   param[0]: int
+	Modifier-> 
+	   type: public
 	Method-> 
-	 	  name: run
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: void
+	   name: run
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: void
 	Method-> 
-	 	  name: toString
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: java.lang.String
+	   name: toString
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: java.lang.String
 	Method-> 
-	 	  name: getVal
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: int
+	   name: setVal
+	ParameterType-> 
+	   param[0]: int
+	Exception-> 
+	   type: java.lang.Exception
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: void
 	Method-> 
-	 	  name: setVal
-		ParameterType-> 
-		   param[0]: int
-		Exception-> 
-		 	  type: java.lang.Exception
-		Modifier-> 
-		   type: public
-		Return-> 
-		   type: void
+	   name: getVal
+	Modifier-> 
+	   type: public
+	Return-> 
+	 	  type: int
 	Method-> 
-	 	  name: printSomething
-		Modifier-> 
-		   type: private
-		Return-> 
-		   type: void
-		Interface-> 
-		 interface java.io.Serializable
+	   name: printSomething
+	Modifier-> 
+	   type: private
+	Return-> 
+	 	  type: void
+	Interface-> 
+	 interface java.io.Serializable
 		  name: java.io.Serializable
-		Interface-> 
-		 interface java.lang.Runnable
+	Interface-> 
+	 interface java.lang.Runnable
 		  name: java.lang.Runnable
 		Method-> 
-		 		  name: run
-			Modifier-> 
-			 	  type: none
-			Return-> 
-			 	  type: void
+		 	  name: run
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
 	Field-> 
-	 	  name: val
-		  type: int
-		  modifier: private
-	 	  value: 3
+	   name: val
+	  type: int
+	  modifier: private
+	   value: 3
 	Field-> 
-	 	  name: val2
-		  type: double
-		  modifier: private
-	 	  value: 0.2
+	   name: val2
+	  type: double
+	  modifier: private
+	   value: 0.2
 	Field-> 
-	 	  name: val3
-		  type: boolean
-		  modifier: private
-	 	  value: true
+	   name: val3
+	  type: boolean
+	  modifier: private
+	   value: true
 		SuperClass-> 
 		 class java.lang.Object
-		  name: java.lang.Object
-			Constructor-> 
-			 public java.lang.Object()
-			  name: java.lang.Object
-				Modifier-> 
-				 		  type: public
-			Method-> 
-			 			  name: finalize
-				Exception-> 
-				 			  type: java.lang.Throwable
-				Modifier-> 
-				 		  type: protected
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				ParameterType-> 
-				 		  param[0]: long
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				ParameterType-> 
-				 		  param[0]: long
-				ParameterType-> 
-				 		  param[1]: int
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: wait
-				Exception-> 
-				 			  type: java.lang.InterruptedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: equals
-				ParameterType-> 
-				 		  param[0]: java.lang.Object
-				Modifier-> 
-				 		  type: public
-				Return-> 
-				 		  type: boolean
-			Method-> 
-			 			  name: toString
-				Modifier-> 
-				 		  type: public
-				Return-> 
-				 		  type: java.lang.String
-			Method-> 
-			 			  name: hashCode
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: int
-			Method-> 
-			 			  name: getClass
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: java.lang.Class
-			Method-> 
-			 			  name: clone
-				Exception-> 
-				 			  type: java.lang.CloneNotSupportedException
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: java.lang.Object
-			Method-> 
-			 			  name: notify
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: notifyAll
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
-			Method-> 
-			 			  name: registerNatives
-				Modifier-> 
-				 		  type: none
-				Return-> 
-				 		  type: void
+	  name: java.lang.Object
+		Constructor-> 
+		 public java.lang.Object()
+		   name: java.lang.Object
+		Modifier-> 
+		 	  type: public
+		Method-> 
+		 	  name: finalize
+		Exception-> 
+		 	  type: java.lang.Throwable
+		Modifier-> 
+		 	  type: protected
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		ParameterType-> 
+		 	  param[0]: long
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		ParameterType-> 
+		 	  param[0]: long
+		ParameterType-> 
+		 	  param[1]: int
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: wait
+		Exception-> 
+		 	  type: java.lang.InterruptedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: equals
+		ParameterType-> 
+		 	  param[0]: java.lang.Object
+		Modifier-> 
+		 	  type: public
+		Return-> 
+		 		  type: boolean
+		Method-> 
+		 	  name: toString
+		Modifier-> 
+		 	  type: public
+		Return-> 
+		 		  type: java.lang.String
+		Method-> 
+		 	  name: hashCode
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: int
+		Method-> 
+		 	  name: getClass
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: java.lang.Class
+		Method-> 
+		 	  name: clone
+		Exception-> 
+		 	  type: java.lang.CloneNotSupportedException
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: java.lang.Object
+		Method-> 
+		 	  name: notify
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: notifyAll
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
+		Method-> 
+		 	  name: registerNatives
+		Modifier-> 
+		 	  type: none
+		Return-> 
+		 		  type: void
 ======================================================
