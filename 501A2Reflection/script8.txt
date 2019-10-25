@@ -6,15 +6,15 @@ Recursive: true
 Declaring Class: 
  java.lang.String
 	Interface: 
-	 java.io.Serializable
+	  java.io.Serializable
 	Interface: 
-	 java.lang.Comparable
+	  java.lang.Comparable
 	Interface: 
-	 java.lang.CharSequence
+	  java.lang.CharSequence
 	Interface: 
-	 java.lang.constant.Constable
+	  java.lang.constant.Constable
 	Interface: 
-	 java.lang.constant.ConstantDesc
+	  java.lang.constant.ConstantDesc
 	SuperClass: 
 	 java.lang.Object
 ======================================================

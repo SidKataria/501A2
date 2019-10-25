@@ -6,9 +6,9 @@ Recursive: true
 Declaring Class: 
  [[LClassB;
 	Interface: 
-	 java.lang.Cloneable
+	  java.lang.Cloneable
 	Interface: 
-	 java.io.Serializable
+	  java.io.Serializable
 	SuperClass: 
 	 java.lang.Object
 ======================================================

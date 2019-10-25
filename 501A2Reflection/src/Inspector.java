@@ -22,7 +22,6 @@ public class Inspector {
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
         //1. Getting the name of the declaring class
         getObjClass(c, recursive);
-        
         //2, 3. Getting the name of the immediate superclass and parent classes if any and implemented interfaces within
         getObjSuperClass(c, recursive);
     }
@@ -60,11 +59,7 @@ public class Inspector {
     private void getInterfaces(Class c, boolean recursive, int counter) {
     	interfaces = c.getInterfaces();
         for (int i = 0; i < interfaces.length; i++) {
-        	for (int j = 0; j <= counter; j++)
-        		System.out.print("	");
-        	System.out.print("Interface: \n");
-        	for (int j = 0; j <= counter; j++)
-        		System.out.print("	");
+        	properPrint(counter + 1, "Interface");
         	System.out.println(" " + interfaces[i].getName());
         }
     }

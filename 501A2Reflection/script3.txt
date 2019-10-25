@@ -6,11 +6,11 @@ Recursive: true
 Declaring Class: 
  ClassB
 	Interface: 
-	 java.lang.Runnable
+	  java.lang.Runnable
 	SuperClass: 
 	 ClassC
 		Interface: 
-		 InterfaceA
+	 	  InterfaceA
 		SuperClass: 
 	 	 ClassD
 			SuperClass: 

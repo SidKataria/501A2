@@ -6,9 +6,9 @@ Recursive: true
 Declaring Class: 
  ClassA
 	Interface: 
-	 java.io.Serializable
+	  java.io.Serializable
 	Interface: 
-	 java.lang.Runnable
+	  java.lang.Runnable
 	SuperClass: 
 	 java.lang.Object
 ======================================================
