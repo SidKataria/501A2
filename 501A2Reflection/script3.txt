@@ -11,50 +11,311 @@ class ClassB
 	  name: ClassB
 		Modifier-> 
 		   type: public
-	Interface-> 
-	 interface java.lang.Runnable
-	  name: java.lang.Runnable
-	SuperClass-> 
-	 class ClassC
-	  name: ClassC
-		Constructor-> 
-		 public ClassC()
-		  name: ClassC
-			Modifier-> 
-			 	  type: public
-		Constructor-> 
-		 public ClassC(int,int)
-		  name: ClassC
-			ParameterType-> 
-			 	  param[0]: int
-			ParameterType-> 
-			 	  param[1]: int
-			Modifier-> 
-			 	  type: public
-		Interface-> 
-		 interface InterfaceA
-		  name: InterfaceA
-		SuperClass-> 
-		 class ClassD
-	  name: ClassD
-	Constructor-> 
-	 public ClassD()
-	  name: ClassD
+	Method-> 
+	 	  name: run
 		Modifier-> 
 		   type: public
-	Constructor-> 
-	 public ClassD(int)
-	  name: ClassD
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: toString
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: func3
 		ParameterType-> 
 		   param[0]: int
 		Modifier-> 
 		   type: public
-			SuperClass-> 
-			 class java.lang.Object
-		  name: java.lang.Object
-		Constructor-> 
-		 public java.lang.Object()
-		  name: java.lang.Object
+		Return-> 
+		   type: void
+		Interface-> 
+		 interface java.lang.Runnable
+		  name: java.lang.Runnable
+		Method-> 
+		 		  name: run
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+	Field-> 
+	 	  name: val
+		  type: ClassA
+		  modifier: private
+	 	Field-> 
+	 	  name: val2
+		  type: ClassA
+		  modifier: private
+	 	Field-> 
+	 	  name: val3
+		  type: ClassA
+		  modifier: private
+	 		SuperClass-> 
+		 class ClassC
+		  name: ClassC
+			Constructor-> 
+			 public ClassC()
+			  name: ClassC
+				Modifier-> 
+				 		  type: public
+			Constructor-> 
+			 public ClassC(int,int)
+			  name: ClassC
+				ParameterType-> 
+				 		  param[0]: int
+				ParameterType-> 
+				 		  param[1]: int
+				Modifier-> 
+				 		  type: public
+			Method-> 
+			 			  name: run
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: toString
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: java.lang.String
+			Method-> 
+			 			  name: func0
+				ParameterType-> 
+				 		  param[0]: int
+				ParameterType-> 
+				 		  param[1]: boolean
+				Exception-> 
+				 			  type: java.lang.Exception
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: func1
+				ParameterType-> 
+				 		  param[0]: int
+				ParameterType-> 
+				 		  param[1]: double
+				ParameterType-> 
+				 		  param[2]: boolean
+				ParameterType-> 
+				 		  param[3]: java.lang.String
+				Exception-> 
+				 			  type: java.lang.Exception
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: func2
+				ParameterType-> 
+				 		  param[0]: java.lang.String
+				Exception-> 
+				 			  type: java.lang.Exception
+				Exception-> 
+				 			  type: java.lang.ArithmeticException
+				Exception-> 
+				 			  type: java.lang.IllegalMonitorStateException
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: int
+			Method-> 
+			 			  name: func3
+				ParameterType-> 
+				 		  param[0]: int
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Interface-> 
+			 interface InterfaceA
+			  name: InterfaceA
+			Method-> 
+			 			  name: func1
+				ParameterType-> 
+				 		  param[0]: int
+				ParameterType-> 
+				 		  param[1]: double
+				ParameterType-> 
+				 		  param[2]: boolean
+				ParameterType-> 
+				 		  param[3]: java.lang.String
+				Exception-> 
+				 			  type: java.lang.Exception
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: func2
+				ParameterType-> 
+				 		  param[0]: java.lang.String
+				Exception-> 
+				 			  type: java.lang.Exception
+				Exception-> 
+				 			  type: java.lang.ArithmeticException
+				Exception-> 
+				 			  type: java.lang.IllegalMonitorStateException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: int
+		Field-> 
+		 		  name: val2
+			  type: ClassA
+			  modifier: private
+		 		Field-> 
+		 		  name: val3
+			  type: ClassA
+			  modifier: private
+		 		Field-> 
+		 		  name: val4
+			  type: ClassA
+			  modifier: private
+		 				SuperClass-> 
+				 class ClassD
+			  name: ClassD
+			Constructor-> 
+			 public ClassD()
+			  name: ClassD
+				Modifier-> 
+				 		  type: public
+			Constructor-> 
+			 public ClassD(int)
+			  name: ClassD
+				ParameterType-> 
+				 		  param[0]: int
+				Modifier-> 
+				 		  type: public
+	Method-> 
+	 	  name: toString
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: getVal3
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Field-> 
+	 	  name: val
+		  type: ClassA
+		  modifier: private
+	 	Field-> 
+	 	  name: val2
+		  type: ClassA
+		  modifier: none
+	 	Field-> 
+	 	  name: val3
+		  type: int
+		  modifier: private
+	 	  value: 34
+	Field-> 
+	 	  name: vallarray
+		  type: [LClassA;
+		  modifier: private
+	 					SuperClass-> 
+					 class java.lang.Object
+				  name: java.lang.Object
+				Constructor-> 
+				 public java.lang.Object()
+				  name: java.lang.Object
+					Modifier-> 
+					 			  type: public
+		Method-> 
+		 		  name: finalize
+			Exception-> 
+			 		  type: java.lang.Throwable
+			Modifier-> 
+			 	  type: protected
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: wait
+			ParameterType-> 
+			 	  param[0]: long
+			Exception-> 
+			 		  type: java.lang.InterruptedException
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: wait
+			ParameterType-> 
+			 	  param[0]: long
+			ParameterType-> 
+			 	  param[1]: int
+			Exception-> 
+			 		  type: java.lang.InterruptedException
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: wait
+			Exception-> 
+			 		  type: java.lang.InterruptedException
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: equals
+			ParameterType-> 
+			 	  param[0]: java.lang.Object
 			Modifier-> 
 			 	  type: public
+			Return-> 
+			 	  type: boolean
+		Method-> 
+		 		  name: toString
+			Modifier-> 
+			 	  type: public
+			Return-> 
+			 	  type: java.lang.String
+		Method-> 
+		 		  name: hashCode
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: int
+		Method-> 
+		 		  name: getClass
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.lang.Class
+		Method-> 
+		 		  name: clone
+			Exception-> 
+			 		  type: java.lang.CloneNotSupportedException
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.lang.Object
+		Method-> 
+		 		  name: notify
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: notifyAll
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
+		Method-> 
+		 		  name: registerNatives
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: void
 ======================================================

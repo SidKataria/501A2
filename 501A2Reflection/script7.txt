@@ -1,23 +1,113 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@36baf30c
+Running Test: [[LClassB;@8efb846
 Recursive: true
 
 Declaring Class-> 
 class [[LClassB;
  name:[[LClassB;
-	Interface-> 
-	 interface java.lang.Cloneable
-	  name: java.lang.Cloneable
-	Interface-> 
-	 interface java.io.Serializable
-	  name: java.io.Serializable
-	SuperClass-> 
-	 class java.lang.Object
-	  name: java.lang.Object
-		Constructor-> 
-		 public java.lang.Object()
+		Interface-> 
+		 interface java.lang.Cloneable
+		  name: java.lang.Cloneable
+		Interface-> 
+		 interface java.io.Serializable
+		  name: java.io.Serializable
+		SuperClass-> 
+		 class java.lang.Object
 		  name: java.lang.Object
-			Modifier-> 
-			 	  type: public
+			Constructor-> 
+			 public java.lang.Object()
+			  name: java.lang.Object
+				Modifier-> 
+				 		  type: public
+			Method-> 
+			 			  name: finalize
+				Exception-> 
+				 			  type: java.lang.Throwable
+				Modifier-> 
+				 		  type: protected
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				ParameterType-> 
+				 		  param[0]: long
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				ParameterType-> 
+				 		  param[0]: long
+				ParameterType-> 
+				 		  param[1]: int
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: equals
+				ParameterType-> 
+				 		  param[0]: java.lang.Object
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: boolean
+			Method-> 
+			 			  name: toString
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: java.lang.String
+			Method-> 
+			 			  name: hashCode
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: int
+			Method-> 
+			 			  name: getClass
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: java.lang.Class
+			Method-> 
+			 			  name: clone
+				Exception-> 
+				 			  type: java.lang.CloneNotSupportedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: java.lang.Object
+			Method-> 
+			 			  name: notify
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: notifyAll
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: registerNatives
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
 ======================================================

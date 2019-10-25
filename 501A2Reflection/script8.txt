@@ -145,27 +145,1152 @@ class java.lang.String
 		   param[2]: int
 		Modifier-> 
 		   type: public
-	Interface-> 
-	 interface java.io.Serializable
-	  name: java.io.Serializable
-	Interface-> 
-	 interface java.lang.Comparable
-	  name: java.lang.Comparable
-	Interface-> 
-	 interface java.lang.CharSequence
-	  name: java.lang.CharSequence
-	Interface-> 
-	 interface java.lang.constant.Constable
-	  name: java.lang.constant.Constable
-	Interface-> 
-	 interface java.lang.constant.ConstantDesc
-	  name: java.lang.constant.ConstantDesc
-	SuperClass-> 
-	 class java.lang.Object
-	  name: java.lang.Object
-		Constructor-> 
-		 public java.lang.Object()
-		  name: java.lang.Object
+	Method-> 
+	 	  name: value
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: [B
+	Method-> 
+	 	  name: equals
+		ParameterType-> 
+		   param[0]: java.lang.Object
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: length
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: toString
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: hashCode
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: getChars
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: [C
+		ParameterType-> 
+		   param[3]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: compareTo
+		ParameterType-> 
+		   param[0]: java.lang.Object
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: compareTo
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: indexOf
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: indexOf
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: indexOf
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: indexOf
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: indexOf
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: byte
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: java.lang.String
+		ParameterType-> 
+		   param[4]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: checkIndex
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: [C
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: java.lang.Object
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: long
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: [C
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: char
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: double
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: float
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: valueOf
+		ParameterType-> 
+		   param[0]: boolean
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: coder
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: byte
+	Method-> 
+	 	  name: rangeCheck
+		ParameterType-> 
+		   param[0]: [C
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.Void
+	Method-> 
+	 	  name: checkBoundsOffCount
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: isLatin1
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: charAt
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: char
+	Method-> 
+	 	  name: codePointAt
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: codePointBefore
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: codePointCount
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: offsetByCodePoints
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: checkBoundsBeginEnd
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: getBytes
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Exception-> 
+		 	  type: java.io.UnsupportedEncodingException
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [B
+	Method-> 
+	 	  name: getBytes
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: byte
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: getBytes
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [B
+	Method-> 
+	 	  name: getBytes
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: [B
+		ParameterType-> 
+		   param[3]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: getBytes
+		ParameterType-> 
+		   param[0]: java.nio.charset.Charset
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [B
+	Method-> 
+	 	  name: contentEquals
+		ParameterType-> 
+		   param[0]: java.lang.StringBuffer
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: contentEquals
+		ParameterType-> 
+		   param[0]: java.lang.CharSequence
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: nonSyncContentEquals
+		ParameterType-> 
+		   param[0]: java.lang.AbstractStringBuilder
+		Modifier-> 
+		   type: private
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: regionMatches
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: java.lang.String
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: regionMatches
+		ParameterType-> 
+		   param[0]: boolean
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: java.lang.String
+		ParameterType-> 
+		   param[3]: int
+		ParameterType-> 
+		   param[4]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: startsWith
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: startsWith
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: lastIndexOf
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: lastIndexOf
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: lastIndexOf
+		ParameterType-> 
+		   param[0]: [B
+		ParameterType-> 
+		   param[1]: byte
+		ParameterType-> 
+		   param[2]: int
+		ParameterType-> 
+		   param[3]: java.lang.String
+		ParameterType-> 
+		   param[4]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: lastIndexOf
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: lastIndexOf
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: substring
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: substring
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: isEmpty
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: replace
+		ParameterType-> 
+		   param[0]: char
+		ParameterType-> 
+		   param[1]: char
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: replace
+		ParameterType-> 
+		   param[0]: java.lang.CharSequence
+		ParameterType-> 
+		   param[1]: java.lang.CharSequence
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: matches
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: replaceFirst
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: replaceAll
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: split
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [Ljava.lang.String;
+	Method-> 
+	 	  name: split
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [Ljava.lang.String;
+	Method-> 
+	 	  name: toLowerCase
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: toLowerCase
+		ParameterType-> 
+		   param[0]: java.util.Locale
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: toUpperCase
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: toUpperCase
+		ParameterType-> 
+		   param[0]: java.util.Locale
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: trim
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: strip
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: stripLeading
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: stripTrailing
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: indexOfNonWhitespace
+		Modifier-> 
+		   type: private
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: lines
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.util.stream.Stream
+	Method-> 
+	 	  name: repeat
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: lastIndexOfNonWhitespace
+		Modifier-> 
+		   type: private
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: outdent
+		ParameterType-> 
+		   param[0]: java.util.List
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: isBlank
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: toCharArray
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: [C
+	Method-> 
+	 	  name: format
+		ParameterType-> 
+		   param[0]: java.util.Locale
+		ParameterType-> 
+		   param[1]: java.lang.String
+		ParameterType-> 
+		   param[2]: [Ljava.lang.Object;
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: format
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: [Ljava.lang.Object;
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: resolveConstantDesc
+		ParameterType-> 
+		   param[0]: java.lang.invoke.MethodHandles$Lookup
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: resolveConstantDesc
+		ParameterType-> 
+		   param[0]: java.lang.invoke.MethodHandles$Lookup
+		Exception-> 
+		 	  type: java.lang.ReflectiveOperationException
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.Object
+	Method-> 
+	 	  name: codePoints
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.util.stream.IntStream
+	Method-> 
+	 	  name: equalsIgnoreCase
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: compareToIgnoreCase
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: int
+	Method-> 
+	 	  name: endsWith
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: subSequence
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.CharSequence
+	Method-> 
+	 	  name: concat
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: contains
+		ParameterType-> 
+		   param[0]: java.lang.CharSequence
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: boolean
+	Method-> 
+	 	  name: join
+		ParameterType-> 
+		   param[0]: java.lang.CharSequence
+		ParameterType-> 
+		   param[1]: [Ljava.lang.CharSequence;
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: join
+		ParameterType-> 
+		   param[0]: java.lang.CharSequence
+		ParameterType-> 
+		   param[1]: java.lang.Iterable
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: indent
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: stripIndent
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: translateEscapes
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: chars
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.util.stream.IntStream
+	Method-> 
+	 	  name: transform
+		ParameterType-> 
+		   param[0]: java.util.function.Function
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.lang.Object
+	Method-> 
+	 	  name: formatted
+		ParameterType-> 
+		   param[0]: [Ljava.lang.Object;
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: copyValueOf
+		ParameterType-> 
+		   param[0]: [C
+		ParameterType-> 
+		   param[1]: int
+		ParameterType-> 
+		   param[2]: int
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: copyValueOf
+		ParameterType-> 
+		   param[0]: [C
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: intern
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: checkOffset
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: void
+	Method-> 
+	 	  name: valueOfCodePoint
+		ParameterType-> 
+		   param[0]: int
+		Modifier-> 
+		   type: static
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: describeConstable
+		Modifier-> 
+		   type: public
+		Return-> 
+		   type: java.util.Optional
+	Method-> 
+	 	  name: lambda$stripIndent$3
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: lambda$indent$2
+		ParameterType-> 
+		   param[0]: int
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: lambda$indent$1
+		ParameterType-> 
+		   param[0]: java.lang.String
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+	Method-> 
+	 	  name: lambda$indent$0
+		ParameterType-> 
+		   param[0]: java.lang.String
+		ParameterType-> 
+		   param[1]: java.lang.String
+		Modifier-> 
+		   type: none
+		Return-> 
+		   type: java.lang.String
+		Interface-> 
+		 interface java.io.Serializable
+		  name: java.io.Serializable
+		Interface-> 
+		 interface java.lang.Comparable
+		  name: java.lang.Comparable
+		Method-> 
+		 		  name: compareTo
+			ParameterType-> 
+			 	  param[0]: java.lang.Object
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: int
+		Interface-> 
+		 interface java.lang.CharSequence
+		  name: java.lang.CharSequence
+		Method-> 
+		 		  name: length
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: int
+		Method-> 
+		 		  name: toString
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.lang.String
+		Method-> 
+		 		  name: charAt
+			ParameterType-> 
+			 	  param[0]: int
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: char
+		Method-> 
+		 		  name: compare
+			ParameterType-> 
+			 	  param[0]: java.lang.CharSequence
+			ParameterType-> 
+			 	  param[1]: java.lang.CharSequence
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: int
+		Method-> 
+		 		  name: codePoints
 			Modifier-> 
 			 	  type: public
+			Return-> 
+			 	  type: java.util.stream.IntStream
+		Method-> 
+		 		  name: subSequence
+			ParameterType-> 
+			 	  param[0]: int
+			ParameterType-> 
+			 	  param[1]: int
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.lang.CharSequence
+		Method-> 
+		 		  name: chars
+			Modifier-> 
+			 	  type: public
+			Return-> 
+			 	  type: java.util.stream.IntStream
+		Method-> 
+		 		  name: lambda$codePoints$1
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.util.Spliterator$OfInt
+		Method-> 
+		 		  name: lambda$chars$0
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.util.Spliterator$OfInt
+		Interface-> 
+		 interface java.lang.constant.Constable
+		  name: java.lang.constant.Constable
+		Method-> 
+		 		  name: describeConstable
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.util.Optional
+		Interface-> 
+		 interface java.lang.constant.ConstantDesc
+		  name: java.lang.constant.ConstantDesc
+		Method-> 
+		 		  name: resolveConstantDesc
+			ParameterType-> 
+			 	  param[0]: java.lang.invoke.MethodHandles$Lookup
+			Exception-> 
+			 		  type: java.lang.ReflectiveOperationException
+			Modifier-> 
+			 	  type: none
+			Return-> 
+			 	  type: java.lang.Object
+	Field-> 
+	 	  name: value
+		  type: [B
+		  modifier: none
+	 	Field-> 
+	 	  name: coder
+		  type: byte
+		  modifier: none
+	 	  value: 0
+	Field-> 
+	 	  name: hash
+		  type: int
+		  modifier: private
+	 	  value: 0
+	Field-> 
+	 	  name: hashIsZero
+		  type: boolean
+		  modifier: private
+	 	  value: false
+	Field-> 
+	 	  name: serialVersionUID
+		  type: long
+		  modifier: none
+	 	  value: -6849794470754667710
+	Field-> 
+	 	  name: COMPACT_STRINGS
+		  type: boolean
+		  modifier: none
+	 	  value: true
+	Field-> 
+	 	  name: serialPersistentFields
+		  type: [Ljava.io.ObjectStreamField;
+		  modifier: none
+	 	Field-> 
+	 	  name: CASE_INSENSITIVE_ORDER
+		  type: java.util.Comparator
+		  modifier: none
+	 	Field-> 
+	 	  name: LATIN1
+		  type: byte
+		  modifier: none
+	 	  value: 0
+	Field-> 
+	 	  name: UTF16
+		  type: byte
+		  modifier: none
+	 	  value: 1
+		SuperClass-> 
+		 class java.lang.Object
+		  name: java.lang.Object
+			Constructor-> 
+			 public java.lang.Object()
+			  name: java.lang.Object
+				Modifier-> 
+				 		  type: public
+			Method-> 
+			 			  name: finalize
+				Exception-> 
+				 			  type: java.lang.Throwable
+				Modifier-> 
+				 		  type: protected
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				ParameterType-> 
+				 		  param[0]: long
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				ParameterType-> 
+				 		  param[0]: long
+				ParameterType-> 
+				 		  param[1]: int
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: wait
+				Exception-> 
+				 			  type: java.lang.InterruptedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: equals
+				ParameterType-> 
+				 		  param[0]: java.lang.Object
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: boolean
+			Method-> 
+			 			  name: toString
+				Modifier-> 
+				 		  type: public
+				Return-> 
+				 		  type: java.lang.String
+			Method-> 
+			 			  name: hashCode
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: int
+			Method-> 
+			 			  name: getClass
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: java.lang.Class
+			Method-> 
+			 			  name: clone
+				Exception-> 
+				 			  type: java.lang.CloneNotSupportedException
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: java.lang.Object
+			Method-> 
+			 			  name: notify
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: notifyAll
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
+			Method-> 
+			 			  name: registerNatives
+				Modifier-> 
+				 		  type: none
+				Return-> 
+				 		  type: void
 ======================================================
